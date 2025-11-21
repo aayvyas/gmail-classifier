@@ -1,0 +1,64 @@
+{
+  "name": "@aayvyas/gmail-classifier",
+  "version": "0.0.1",
+  "description": "Privacy-focused Gmail classifier using local LLM - automatically organize your inbox with AI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "gmail-classifier": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gmail",
+    "email",
+    "classifier",
+    "ai",
+    "llm",
+    "local",
+    "privacy",
+    "automation",
+    "inbox",
+    "organization",
+    "genai",
+    "llama",
+    "ollama"
+  ],
+  "author": "aayvyas",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aayvyas/gmail-classifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aayvyas/gmail-classifier/issues"
+  },
+  "homepage": "https://github.com/aayvyas/gmail-classifier#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "RELEASE_NOTES.md",
+    "service.zsh"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "dotenv": "^17.2.3",
+    "googleapis": "^166.0.0",
+    "node-cron": "^4.2.1",
+    "openai": "^6.9.0",
+    "ts-node": "^10.9.2"
+  }
+}
