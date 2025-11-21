@@ -1,6 +1,6 @@
 {
   "name": "@aayvyas/gmail-classifier",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Privacy-focused Gmail classifier using local LLM - automatically organize your inbox with AI",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
